@@ -8,7 +8,7 @@ public class Rivista extends Catalogo {
         this.periodicity = periodicity;
     }
 
-    public Periodicità getPeriodicity() {
+    public Periodicità getPeriodicità() {
         return periodicity;
     }
 

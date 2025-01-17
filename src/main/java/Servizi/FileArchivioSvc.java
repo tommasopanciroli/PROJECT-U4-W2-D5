@@ -149,7 +149,7 @@ public class FileArchivioSvc implements ArchivioSvc{
                 if(c instanceof Libro){
                     lines = Arrays.asList("Libro > " + c.getIsbn().toString()+ ", " + c.getTitle()+ ", " + c.getPublish_year()+ ", "+ c.getPages()+ ", "+ ((Libro) c).getAuthor() + ", " + ((Libro) c).getGenre());
                 }else{
-                    lines = Arrays.asList("Rivista > " + c.getIsbn().toString()+", "+ c.getTitle()+", "+c.getPublish_year()+", "+c.getPages()+", "+((Rivista) c).getPeriodicity());
+                    lines = Arrays.asList("Rivista > " + c.getIsbn().toString()+", "+ c.getTitle()+", "+c.getPublish_year()+", "+c.getPages()+", "+((Rivista) c).getPeriodicità());
                 }
                 FileUtils.writeLines(f, StandardCharsets.ISO_8859_1.name(), lines, true);
 
